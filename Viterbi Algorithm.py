@@ -24,16 +24,7 @@ probability_dictionary = {"经常": 0.1,
                           "意": 0.05,
                           "见分歧": 0.05,
                           "分": 0.1}
-# graph = {
-#     "1": [GraphNode("2", 3), GraphNode("3", 2.3)],
-#     "2": [GraphNode("3", 20)],
-#     "3": [GraphNode("4", 2.3), GraphNode("6", 2.3)],
-#     "4": [GraphNode("5", 3), GraphNode("6", 1.6)],
-#     "5": [GraphNode("6", 3), GraphNode("8", 3)],
-#     "6": [GraphNode("7", 2.3), GraphNode("8", 1.6)],
-#     "7": [GraphNode("8", 20)],
-#     "8": []
-# }
+
 for k, v in probability_dictionary.items():
     probability_dictionary[k] = round(-math.log(v, math.e), 1)
 graph = {}
